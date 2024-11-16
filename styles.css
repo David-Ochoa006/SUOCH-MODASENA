@@ -1,0 +1,276 @@
+/* Estilo general para el cuerpo del documento */
+body {
+    font-family: Arial, sans-serif; /* Establece la fuente del documento */
+    margin: 0; /* Elimina el margen por defecto del cuerpo */
+    padding: 0; /* Elimina el relleno por defecto del cuerpo */
+    box-sizing: border-box; /* Incluye el borde y el relleno en el cálculo del ancho y alto de los elementos */
+    background-repeat: no-repeat;
+    background-image: url(imagenes\ de\ pagina\ sena/LOGO.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+
+}
+
+/* Estilo para el encabezado */
+header {
+    display: flex; /* Utiliza flexbox para alinear los elementos hijos */
+    justify-content: space-between; /* Distribuye el espacio entre los elementos hijos */
+    align-items: center; /* Centra verticalmente los elementos hijos */
+    padding: 10px 20px; /* Establece el relleno superior e inferior de 10px y el izquierdo y derecho de 20px */
+    background-color: #333; /* Color de fondo del encabezado */
+    color: #fff; /* Color del texto en el encabezado */
+
+}
+
+/* Estilo para el título del logo en el encabezado */
+header .logo h1 {
+    margin: 0; /* Elimina el margen del título */
+}
+
+/* Estilo para la barra de búsqueda en el encabezado */
+header .search-bar {
+    display: flex; /* Utiliza flexbox para alinear los elementos hijos */
+}
+
+/* Estilo para el campo de entrada en la barra de búsqueda */
+header .search-bar input {
+    padding: 5px; /* Rellena el campo de entrada con 5px */
+    margin-right: 5px; /* Añade un margen derecho de 5px */
+}
+
+/* Estilo para la lista de navegación en el encabezado */
+header nav ul {
+    list-style: none; /* Elimina los puntos de la lista */
+    display: flex; /* Utiliza flexbox para alinear los elementos de la lista */
+    margin: 0; /* Elimina el margen de la lista */
+    padding: 0; /* Elimina el relleno de la lista */
+}
+
+/* Estilo para los elementos de la lista de navegación en el encabezado */
+header nav ul li {
+    margin-left: 20px; /* Añade un margen izquierdo de 20px */
+}
+
+/* Estilo para los enlaces en la lista de navegación en el encabezado */
+header nav ul li a {
+    color: #fff; /* Color del texto de los enlaces */
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+
+}
+
+/* Estilo para el carrusel */
+.carousel {
+    position: relative; /* Establece la posición relativa para que los controles del carrusel se posicionen absolutamente dentro de este contenedor */
+    height: 400px; /* Establece la altura del carrusel */
+    width: 100%; /* Establece el ancho del carrusel al 100% del contenedor padre */
+    max-width: 100%; /* Establece el ancho máximo del carrusel al 100% del contenedor padre */
+    overflow: hidden; /* Oculta cualquier contenido que desborde el contenedor */
+
+}
+
+/* Estilo para los elementos individuales del carrusel */
+.carousel-item {
+    display: none; /* Oculta los elementos del carrusel por defecto */
+    width: 100%; /* Establece el ancho de los elementos al 100% del contenedor del carrusel */
+    height: 100%; /* Establece la altura de los elementos al 100% del contenedor del carrusel */
+}
+
+/* Estilo para el elemento activo del carrusel */
+.carousel-item.active {
+    display: block; /* Muestra el elemento activo */
+}
+
+/* Estilo para las imágenes del carrusel */
+.carousel img {
+    width: 100%; /* Establece el ancho de las imágenes al 100% del contenedor */
+    height: 100%; /* Establece la altura de las imágenes al 200% del contenedor para cubrirlo completamente */
+    object-fit: contain; /* Ajusta las imágenes para que cubran el contenedor sin distorsionar su proporción */
+    position: absolute; /* Posiciona las imágenes absolutamente dentro del contenedor del carrusel */
+    top: 0; /* Establece la posición superior de la imagen */
+    left: 0; /* Establece la posición izquierda de la imagen */
+} 
+
+/* Estilo para los controles del carrusel */
+.carousel-control {
+    position: absolute; /* Posiciona los controles absolutamente dentro del contenedor del carrusel */
+    top: 50%; /* Posiciona los controles en la mitad vertical del contenedor */
+    transform: translateY(-50%); /* Centra los controles verticalmente */
+    background-color: rgba(0, 0, 0, 0.5); /* Color de fondo semi-transparente de los controles */
+    color: #fff; /* Color del texto de los controles */
+    border: none; /* Elimina el borde de los controles */
+    padding: 10px; /* Añade un relleno de 10px alrededor del texto */
+    cursor: pointer; /* Cambia el cursor al pasar sobre los controles */
+}
+
+/* Estilo para el botón de control "anterior" del carrusel */
+.carousel-control.prev {
+    left: 10px; /* Posiciona el botón a 10px del borde izquierdo */
+}
+
+/* Estilo para el botón de control "siguiente" del carrusel */
+.carousel-control.next {
+    right: 10px; /* Posiciona el botón a 10px del borde derecho */
+}
+
+#seleccione{
+    color: #000000;
+    text-shadow: 
+    -1px -1px 0 #ffffff,  
+     1px -1px 0 #ffffff,
+    -1px  1px 0 #ffffff,
+     1px  1px 0 #ffffff; /* Color del contorno */
+}
+
+/* Estilo para las categorías */
+.selecition { 
+    display: flex; /* Utiliza flexbox para alinear los elementos de categoría */
+    flex-wrap: wrap; /* Permite que los elementos de categoría se envuelvan en múltiples líneas si es necesario */
+    justify-content: center; /* Centra los elementos de categoría horizontalmente */
+    gap: 40px; /* Establece un espacio de 40px entre los elementos de categoría */
+    margin: 10px; /* Añade un margen de 10px alrededor del contenedor de categorías */
+    
+}
+
+/* Estilo para las imágenes de las categorías */
+.category {
+    max-width: 100%; /* Establece el ancho máximo del carrusel al 100% del contenedor padre */
+    min-width: 200px;
+    width: 250px; /* Establece un ancho fijo de 200px para los productos */
+    height: 200px; /* Establece la altura */
+    margin: 10px; /* Añade un margen de 20px alrededor de los productos */
+    border: 1px solid #ccc; /* Añade un borde de 1px de color gris claro */
+    padding: 10px; /* Añade un relleno de 10px dentro del producto */
+    text-align: center; /* Centra el texto dentro del producto */
+    align-items: center; /* Centra verticalmente el contenido dentro del producto */
+}
+
+.category img {
+    width: 100%; /* Establece el ancho de las imágenes al 100% del contenedor */
+    height: 100%; /* Establece la altura de las imágenes al 200% del contenedor para cubrirlo completamente */
+    object-fit: cover; /* Ajusta las imágenes para que cubran el contenedor sin distorsionar su proporción */
+    position: relative; /* Posiciona las imágenes absolutamente dentro del contenedor del carrusel */
+}
+
+.category button {
+    position: relative; /* Posiciona el botón de manera absoluta */
+    background-color: rgba(255, 255, 255, 0.8);
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 20px;
+}
+
+#productos{
+    color: #000000;
+    text-shadow: 
+    -1px -1px 0 #ffffff, 
+    1px -1px 0 #ffffff,
+    -1px  1px 0 #ffffff,
+    1px  1px 0 #ffffff; /* Color del contorno */
+}
+
+/* Estilo para la lista de productos */
+.product-list {
+    display: flex; /* Utiliza flexbox para alinear los elementos de categoría */
+    flex-wrap: wrap; /* Permite que los elementos de categoría se envuelvan en múltiples líneas si es necesario */
+    justify-content: center; /* Centra los elementos de categoría horizontalmente */
+    gap: 40px; /* Establece un espacio de 40px entre los elementos de categoría */
+    margin: 10px; /* Añade un margen de 10px alrededor del contenedor de categorías */
+}
+
+/* Estilo para los productos individuales */
+.product {
+    width: 250px; /* Establece un ancho fijo de 200px para los productos */
+    margin: 20px; /* Añade un margen de 20px alrededor de los productos */
+    border: 1px solid #ccc; /* Añade un borde de 1px de color gris claro */
+    padding: 10px; /* Añade un relleno de 10px dentro del producto */
+    text-align: center; /* Centra el texto dentro del producto */
+    align-items: center; /* Centra verticalmente el contenido dentro del producto */
+}
+
+/* Estilo para las imágenes de los productos */
+.product img {
+    width: 100%; /* Establece el ancho de las imágenes al 100% del contenedor del producto */
+    height: auto; /* Mantiene la proporción de las imágenes */
+}
+
+/* Estilo para los encabezados h2 */
+h2 {
+    text-align: center; /* Centra el texto del encabezado */
+    margin-bottom: 20px; /* Añade un margen inferior de 20px */
+}
+
+/* Estilo para los formularios */
+form {
+    max-width: 400px; /* Establece un ancho máximo de 400px para los formularios */
+    margin: 0 auto; /* Centra el formulario horizontalmente */
+    display: flex; /* Utiliza flexbox para alinear los elementos del formulario */
+    flex-direction: column; /* Organiza los elementos del formulario en una columna */
+}
+
+/* Estilo para las etiquetas de los formularios */
+form label {
+    margin-bottom: 5px; /* Añade un margen inferior de 5px a las etiquetas */
+}
+
+/* Estilo para los campos de entrada y botones del formulario */
+form input,
+form button {
+    padding: 10px; /* Añade un relleno de 10px dentro de los campos de entrada y botones */
+    margin-bottom: 10px; /* Añade un margen inferior de 10px */
+    border: 1px solid #ccc; /* Añade un borde de 1px de color gris claro */
+    font-size: 16px; /* Establece el tamaño de la fuente en 16px */
+}
+
+/* Estilo para los botones del formulario */
+form button {
+    background-color: #333; /* Color de fondo del botón */
+    color: #eb0f0f; /* Color del texto del botón */
+    border: none; /* Elimina el borde del botón */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    transition: background-color 0.3s ease; /* Añade una transición suave al cambiar el color de fondo */
+}
+
+/* Estilo para el estado hover de los botones del formulario */
+form button:hover {
+    background-color: #555; /* Cambia el color de fondo cuando el cursor está sobre el botón */
+}
+
+
+#carrito{
+    margin: 100px;
+    color: #000000;
+    text-shadow: 
+    -1px -1px 0 #ffffff,  
+     1px -1px 0 #ffffff,
+    -1px  1px 0 #ffffff,
+     1px  1px 0 #ffffff; /* Color del contorno */
+}
+
+/* Estilo para los elementos del carrito */
+.cart-items {
+    display: flex; /* Utiliza flexbox para alinear los elementos del carrito */
+    flex-direction: column; /* Organiza los elementos en una columna */
+    padding: 20px; /* Añade un relleno de 20px dentro del carrito */
+    border: 1px solid #ccc; /* Añade un borde de 1px de color gris claro */
+    margin: 20px 0; /* Añade un margen de 20px arriba y abajo del carrito */
+}
+
+/* Estilo para el total del carrito */
+.cart-total {
+    text-align: right; /* Alinea el texto a la derecha */
+    padding: 10px; /* Añade un relleno de 10px dentro del total */
+}
+
+/* Estilo para el pie de página */
+footer {
+    background-color: #333; /* Color de fondo del pie de página */
+    color: #fff; /* Color del texto en el pie de página */
+    text-align: center; /* Centra el texto en el pie de página */
+    padding: 10px; /* Añade un relleno de 10px dentro del pie de página */
+    position: relative; /* Establece la posición relativa para el pie de página */
+    bottom: 0; /* Posiciona el pie de página en la parte inferior */
+    width: 100%; /* Establece el ancho del pie de página al 100% del contenedor padre */
+}
