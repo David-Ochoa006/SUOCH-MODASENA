@@ -5,7 +5,7 @@ body {
     padding: 0; /* Elimina el relleno por defecto del cuerpo */
     box-sizing: border-box; /* Incluye el borde y el relleno en el cálculo del ancho y alto de los elementos */
     background-repeat: no-repeat;
-    background-image: url(imagenes\ de\ pagina\ sena/LOGO.jpg);
+    background-image: url(imagenes-de-pagina/LOGO.jpg);
     background-size: cover;
     background-position: center center;
     background-attachment: fixed;
