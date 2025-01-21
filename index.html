@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SUOCH-MODA</title>
+    <link rel="stylesheet" href="../EstiloCss/Styles.css">
+    <script src="../codigoScript/Scripts.js" defer></script>
+</head>
+<body>
+    <header id="header">
+        <div class="logo">
+            <h1><a href="Index.html">SUOCH-MODA</a></h1>
+        </div>
+        <div class="search-bar">
+            <input type="text" id="search-input" placeholder="Buscar productos...">
+            <button onclick="searchProducts()">Buscar</button>
+        </div>
+        <nav>
+            <label for="show-menu" class="show-menu">Menú</label>
+            <input type="checkbox" id="show-menu" role="button">
+            <ul id="menu">
+                <li><a href="../ContenidoHtml/Index.html">Inicio</a></li>
+                <li><a href="../ContenidoHtml/Categorias.html">Categorías</a></li>
+                <li><a href="../ContenidoHtml/Productos.html">Productos</a></li>
+                <li><a href="../ContenidoHtml/Carrito.html">Carrito</a></li>
+                <li><a href="../ContenidoHtml/Inicio Sesion.html">Iniciar Sesión</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="inicio-carousel">
+        <div class="carousel">
+            <div class="carousel-item active">
+                <img src="https://images.pexels.com/photos/322207/pexels-photo-322207.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Primera imagen">
+            </div>
+            <div class="carousel-item">
+                <img src="https://images.pexels.com/photos/29597045/pexels-photo-29597045/free-photo-of-botas-negras-sobre-cesped-estilo-relajante-al-aire-libre.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Segunda imagen">
+            </div>
+            <div class="carousel-item">
+                <img src="https://github.com/David-Ochoa006/SUOCH-MODASENA/blob/main/imagenes-de-pagina/LOGO.jpg" alt="Tercera imagen">
+            </div>
+            <button class="carousel-control prev" onclick="moveCarousel(-1)">&#10094;</button>
+            <button class="carousel-control next" onclick="moveCarousel(1)">&#10095;</button>
+        </div>
+    </section>
+
+
+
+    <section id="productos">
+        <h2>Nuestros Productos</h2>
+        <div class="one-product-list">
+            <div class="product">
+                <h3>Camistas</h3>
+                <img src="https://images.pexels.com/photos/13940247/pexels-photo-13940247.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Producto 1">
+                <p>$29.99</p>
+                <button>Comprar</button>
+            </div>
+        </div>
+        <div class="two-product-list">
+            <div class="product">
+                <h3>Pantalones</h3>
+                <img src="https://images.pexels.com/photos/6311478/pexels-photo-6311478.jpeg?auto=compress&cs=tinysrgb&w=600D" alt="Producto 2">
+                <p>$49.99</p>
+                <button>Comprar</button>
+            </div>
+        </div>
+        <div class="three-product-list">
+            <div class="product">
+                <h3>Zapatos</h3>
+                <img src="https://images.pexels.com/photos/22799931/pexels-photo-22799931/free-photo-of-mujer-en-vestido-de-verano-sentada-con-un-libro-sobre-la-hierba.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Producto 3">
+                <p>$50.000</p>
+                <button>Comprar</button>
+            </div>
+        </div>
+
+    </section>
+    
+    <section id="categorias">
+        <h2 class="selectionetucategoría">Seleccione Tu Categoría</h2>
+        <div class="one-selecition">
+            <div class="category" onclick="filterCategory('hombres')">
+                <img src="https://images.pexels.com/photos/9775768/pexels-photo-9775768.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Camisas">
+                <p>$39.99</p>
+                <button>Comprar</button>
+            </div>
+        </div>
+    <div class="ver-mas">
+        <button>Ver Mas</button>
+    </div>
+        <div class="two-selecition">
+            <div class="category" onclick="filterCategory('mujeres')">
+                <img src="https://images.pexels.com/photos/7203907/pexels-photo-7203907.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Pantalones">
+                <p>$39.99</p>
+                <button>Comprar</button>
+            </div>
+            <div class="category" onclick="filterCategory('mujeres')">
+                <img src="https://images.pexels.com/photos/7203907/pexels-photo-7203907.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Pantalones">
+                <p>$39.99</p>
+                <button>Comprar</button>
+            </div>
+            <div class="category" onclick="filterCategory('mujeres')">
+                <img src="https://images.pexels.com/photos/7203907/pexels-photo-7203907.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Pantalones">
+                <p>$39.99</p>
+                <button>Comprar</button>
+            </div>
+            <div class="category" onclick="filterCategory('mujeres')">
+                <img src="https://images.pexels.com/photos/7203907/pexels-photo-7203907.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Pantalones">
+                <p>$39.99</p>
+                <button>Comprar</button>
+            </div>
+        </div>
+        <div class="ver-mas">
+            <button>Ver Mas</button>
+        </div>
+            <div class="three-selecition">
+            <div class="category" onclick="filterCategory('ninos')">
+                <img src="https://images.pexels.com/photos/3771506/pexels-photo-3771506.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Vestidos">
+                <p>$39.99</p>
+                <button>Comprar</button>
+            </div>
+        </div>
+        <div class="ver-mas">
+            <button>Ver Mas</button>
+        </div>
+            <div class="four-selecition">
+            <div class="category" onclick="filterCategory('accesorios')">
+                <img src="https://images.pexels.com/photos/29592831/pexels-photo-29592831/free-photo-of-reloj-digital-casio-vintage-con-aires-retro.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Accesorios">
+                <p>$39.99</p>
+                <button>Comprar</button>
+            </div>
+        </div>
+        <div class="ver-mas">
+            <button>Ver Mas</button>
+        </div>
+    </section>
+
+    <!-- <section id="carrito">
+        <h2>Carrito de Compras</h2>
+        <div class="cart-items"> -->
+            <!-- Los artículos del carrito se renderizarán aquí -->
+        <!-- </div>
+        <div class="cart-total">
+            <p>Total: $<span id="cart-total">0.00</span></p>
+            <button onclick="checkout()">Pagar</button>
+        </div>
+    </section> -->
+
+    <footer>
+        <p>© 2024 SUOCH-MODA</p>
+    </footer>
+
+    
+</body>
+</html>
